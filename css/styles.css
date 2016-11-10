@@ -1,0 +1,117 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	color: #666c7b;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #f8f8f8;
+	font-weight: 400;
+	overflow: auto;
+	background: #396ad1;
+	color: #fff;
+}
+
+/* Header */
+header {
+	width: calc(80vw - 1px);
+	margin: calc(10vh + 1px) auto;
+	position: relative;
+	overflow:auto;
+}
+
+.logo {
+	width:calc(30vw - 1px);
+	min-height: calc(40vh - 1px);
+	float:left;
+	z-index: 100;
+	margin-right:10vw;
+	display:inline-block;
+	background: #0f27b7;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.logo img {
+	width:90%;
+	height:auto;
+}
+
+header .tagline {
+	width:calc(40vw - 1px);
+	height:calc(30vh - 1px);
+	padding-left:2vw;
+	margin-top:0;
+	float:right;
+	display:inline-block;
+	background: #0f27b7;
+}
+
+a {
+	 color:#0f27b7;
+   border-bottom:3px dashed #0f27b7;
+   cursor:pointer;
+   -moz-transition:all 0.2s ease;
+   -ms-transition:all 0.2s ease;
+   -o-transition:all 0.2s ease;
+   transition:all 0.2s ease;
+	 text-decoration:none;
+}
+
+a:hover {
+	border-bottom:3px solid #0f27b7;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+}
+
+/* Content */
+.content {
+	max-width:80%;
+	position: relative;
+	margin:0 auto;
+}
+
+.content--grid div.caption, .content--grid div.intro {
+	background: #fff;
+	font-weight: bold;
+	color: #0f27b7;
+	min-height: 10vw;
+	padding: 2em;
+	line-height: 1.5;
+	margin-top:0;
+}
+
+.content--grid div.caption {
+	width:25vw;
+	display:inline-block;
+}
+
+.content--grid div.intro {
+	margin:10vh auto;
+	width:70vw;
+
+}
+
+.content--grid iframe {
+	border:5px solid #fff;
+	width:50vw;
+	height:60vh;
+}
+
+.content--grid div.piece:nth-child(odd) iframe {
+	float:right;
+	margin-left:5vw;
+}
+
+.content--grid div.piece:nth-child(even) iframe {
+	float:left;
+	margin-right:5vw;
+}
+.content--grid div.piece {
+	overflow:auto;
+	clear:both;
+	margin-bottom:10vh;
+}
