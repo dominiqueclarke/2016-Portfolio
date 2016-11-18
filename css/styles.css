@@ -98,6 +98,14 @@ header {
 	margin-left:1px;
 }
 
+.contact a {
+	border-bottom:none;
+}
+
+.contact a:hover {
+	border-bottom:none;
+}
+
 .contact div {
 	flex:1 1 0;
 	display:inline-flex;
