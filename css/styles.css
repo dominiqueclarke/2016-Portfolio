@@ -2,11 +2,11 @@
 
 body {
 	font-family: 'Roboto Mono', monospace;
+	font-weight:400;
 	color: #666c7b;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: #f8f8f8;
-	font-weight: 400;
 	overflow: auto;
 	background: #396ad1;
 	color: #fff;
@@ -19,6 +19,10 @@ a.github-corner {
 	top: 0;
 	border: 0;
 	right: 0;
+}
+
+a.github-corner-main {
+	position: fixed;
 }
 
 @keyframes octocat-wave {
@@ -54,7 +58,7 @@ header {
 
 .logo {
 	width:calc(30vw - 1px);
-  height: calc(40vh - 1px);
+    height: calc(40vh - 1px);
 	float:left;
 	z-index: 100;
 	margin-right:10vw;
@@ -70,25 +74,61 @@ header {
 	height:auto;
 }
 
-header .tagline {
+.tagline {
 	width:calc(40vw - 1px);
 	min-height:calc(20vh - 1px);
 	padding-left:2vw;
-	margin-top:0;
-	float:right;
-	display:flex;
+	margin:0 0 0 1px;
+	display:inline-flex;
 	align-items:center;
 	background: #0f27b7;
 }
 
 .tagline h1 {
 	margin:0;
+	font-weight:400;
 }
 
+.contact {
+	background:#0f27b7;
+	height:calc(10vh - 1px);
+	width:calc(40vw - 1px);
+	display:inline-flex;
+	margin-top:calc(10vh + 1px);
+	margin-left:1px;
+}
+
+.contact div {
+	flex:1 1 0;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	margin:0;
+	padding:0;
+	height:10vh;
+	width:10vw;
+}
+
+.contact svg {
+	fill:#fff;
+	transition:all .5s ease;
+}
+
+.contact svg:hover {
+    fill:#7599E4;
+	transition:all .5s ease;
+}
+
+.in {
+	position:relative;
+	top:-2px;
+}
+
+
 a {
-	 color:#0f27b7;
-	 border-bottom:2px solid #7599E4;
-   cursor:pointer;
+	color:#0f27b7;
+	border-bottom:2px solid #7599E4;
+  	cursor:pointer;
    -moz-transition:all 0.2s ease;
    -ms-transition:all 0.2s ease;
    -o-transition:all 0.2s ease;
@@ -113,7 +153,6 @@ a:hover {
 
 .caption, .content--grid div.intro {
 	background: #fff;
-	font-weight: bold;
 	color: #0f27b7;
 	min-height: 10vw;
 	padding: 2em;
@@ -135,7 +174,7 @@ a:hover {
 
 .content--grid iframe {
 	width:calc(50vw - 1px);
-	height:60vh;
+	height:80vh;
 	border:none;
 	margin-left:1px;
 }
@@ -168,7 +207,7 @@ footer a {
 }
 
 footer a:hover {
-	border-ccolor:#7599E4;
+	border-ccolor:
 }
 
 @media screen and (max-width:880px) {
