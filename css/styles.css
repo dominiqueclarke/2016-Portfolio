@@ -8,7 +8,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow: auto;
 	background: #396ad1;
-	color: #fff;
+	color: #F6F3EB;
 }
 
 a.github-corner {
@@ -121,7 +121,7 @@ header {
 }
 
 .contact svg {
-	fill:#fff;
+	fill:#F6F3EB;
 	transition:all .5s ease;
 }
 
@@ -163,13 +163,14 @@ a:hover {
 	padding-right:1px;
 }
 
-.caption, .content--grid div.intro-content {
-	background: #fff;
+.caption, .intro-content {
+	background: #F6F3EB;
 	color: #0f27b7;
 	min-height: 10vw;
 	padding: 2em;
 	line-height: 1.5;
 	margin-top:0;
+	overflow:auto;
 }
 
 .caption {
@@ -180,6 +181,20 @@ a:hover {
 
 .intro, .portfolio {
 	width:100%;
+}
+
+.intro-content .headshot {
+	width:30%;
+	height:40vh;
+	float:left;
+	margin-right:2em;
+	background-size:cover;
+	background-image: linear-gradient(to top left, rgba(22, 42, 82, 0.1), rgba(15, 39, 183, 0.1)), url("../img/headshot.jpg");
+    background-image: -moz-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
+    background-image: -o-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
+    background-image: -ms-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22, 42, 82, 0.3)), to(rgba(15, 39, 183, 0.3))), url("../img/headshot.jpg");
+    background-image: -webkit-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
 }
 
 .section-title {
