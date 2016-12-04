@@ -1,10 +1,10 @@
 /**
- * main.js
+ * lineMaker.js
  * http://www.codrops.com
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2016, Codrops
  * http://www.codrops.com
  */
@@ -14,7 +14,7 @@
 
 	// Helper vars and functions.
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -89,7 +89,7 @@
 		else if( opts.animation.direction === 'RightLeft' ) {
 			tOrigin = '100% 50%';
 		}
-		
+
 		this.el.style.WebkitTransformOrigin = this.el.style.transformOrigin = tOrigin;
 	};
 
@@ -199,7 +199,7 @@
 			this.lines.push(line);
 		}
 
-		var p = this.options.parent, 
+		var p = this.options.parent,
 			pEl = typeof p.element === 'string' ? document.querySelector(p.element) : p.element;
 
 		if( p.position === 'prepend' ) {
@@ -259,7 +259,7 @@
 	LineMaker.prototype._toggleLine = function(lineIdx, action) {
 		var line = this.lines[lineIdx];
 		if( !line ) { return; }
-		
+
 		if( action === 'show' && !line.rendered ) {
 			line.show();
 		}
@@ -316,7 +316,7 @@
 	LineMaker.prototype.showLine = function(lineIdx) {
 		this._toggleLine(lineIdx, 'show');
 	};
-	
+
 	/**
 	 * Hides one line.
 	 * lineIndex: index/position of the line in the LineMaker.options.lines array.
