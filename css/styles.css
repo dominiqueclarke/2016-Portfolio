@@ -24,6 +24,7 @@ a.github-corner {
 
 a.github-corner-main {
 	position: fixed;
+	z-index:2;
 }
 
 @keyframes octocat-wave {
@@ -62,7 +63,7 @@ header {
     height: calc(40vh - 1px);
 	float:left;
 	z-index: 100;
-	margin-right:10vw;
+	margin-right:calc(10vw + 2px);
 	display:inline-block;
 	background: #0f27b7;
 	display:flex;
@@ -80,10 +81,9 @@ header {
 }
 
 .tagline {
-	width:calc(40vw - 1px);
-	min-height:calc(20vh - 1px);
+	width:calc(40vw - 2px);
+	height:calc(20vh - 1px);
 	padding-left:2vw;
-	margin:0 0 0 1px;
 	display:inline-flex;
 	align-items:center;
 	background: #0f27b7;
@@ -97,10 +97,9 @@ header {
 .contact {
 	background:#0f27b7;
 	height:calc(10vh - 1px);
-	width:calc(40vw - 1px);
+	width:calc(40vw - 2px);
 	display:inline-flex;
 	margin-top:calc(10vh + 1px);
-	margin-left:1px;
 }
 
 .contact a {
@@ -233,6 +232,13 @@ a.btn:hover {
     background-image: -ms-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22, 42, 82, 0.3)), to(rgba(15, 39, 183, 0.3))), url("../img/headshot.jpg");
     background-image: -webkit-linear-gradient(top left, rgba(22, 42, 82, 0.3), rgba(15, 39, 183, 0.3)), url("../img/headshot.jpg");
+
+}
+
+@keyframes gradient {
+    0%   { background-position: 14% 0%; }
+    50%  { background-position: 87% 100%; }
+    100% { background-position: 14% 0%; }
 }
 
 .section-title {
@@ -244,10 +250,10 @@ a.btn:hover {
 .section-title h1 {
 	font-family:"Comfortaa";
 	background-color:#0f27b7;
-	width:calc(100% - 1px);
+	width:calc(100% - 2px);
 	height:calc(100% - 1px);
 	line-height:10vh;
-	margin:0;
+	margin: 0 0 0 1px;
 }
 
 iframe, .carousel {
@@ -348,8 +354,18 @@ footer a:hover {
 		font-size:1.5rem;
 	}
 
+	.contact {
+		width:100%;
+		margin-right:0;
+	}
+
 	.carousel {
 		width:100%;
+	}
+
+	.skill {
+		width:30%;
+		margin-bottom:1.5em;
 	}
 
 	.intro-content .headshot {
@@ -373,6 +389,11 @@ footer a:hover {
 		margin:0 0 10vh 0 !important;
 		width:100% !important;
 	}
+
+	.skill {
+		width:50%;
+	}
+
 
 	.carousel {
 		width:100%;
